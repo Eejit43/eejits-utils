@@ -14,30 +14,27 @@ h1 {
     text-align: center;
 }
 
-#buttons button {
-    display: block;
-    margin-top: 10px;
-}
-
 button {
+    display: block;
     transition: 0.2s;
     cursor: pointer;
+    margin-top: 10px;
     border: 1px solid #4c566a;
     border-radius: 2px;
     background-color: #5e81ac;
     color: #eceff4;
-}
 
-button:hover {
-    background-color: #5176a4;
-}
+    &:hover {
+        background-color: #5176a4;
+    }
 
-button:active {
-    background-color: #3b679c;
-}
+    &:active {
+        background-color: #3b679c;
+    }
 
-button:disabled {
-    cursor: default;
-    background-color: #3f6089;
-    color: #abb8cd;
+    &:disabled {
+        cursor: default;
+        background-color: #3f6089;
+        color: #abb8cd;
+    }
 }
