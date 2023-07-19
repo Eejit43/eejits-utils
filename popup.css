@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
 * {
     box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
 }
 
 body {
@@ -15,17 +15,17 @@ h1 {
 }
 
 #buttons button {
-    margin-top: 10px;
     display: block;
+    margin-top: 10px;
 }
 
 button {
-    background-color: #5e81ac;
+    transition: 0.2s;
+    cursor: pointer;
     border: 1px solid #4c566a;
     border-radius: 2px;
+    background-color: #5e81ac;
     color: #eceff4;
-    cursor: pointer;
-    transition: 0.2s;
 }
 
 button:hover {
@@ -37,7 +37,7 @@ button:active {
 }
 
 button:disabled {
+    cursor: default;
     background-color: #3f6089;
     color: #abb8cd;
-    cursor: default;
 }
