@@ -22,19 +22,21 @@ addButtonHandler('clear-cookies', async () => {
     return { message: `Cleared ${cookies.length} cookies!` };
 });
 
-// Functions
-function addButtonHandler(button, callback) {
-    button = document.getElementById(button);
+type buttonCallback = () => Promise<{ message?: string; success?: boolean }>;
 
-    button.dataset.title = button.textContent;
+// Functions
+function addButtonHandler(buttonId: string, callback: buttonCallback) {
+    const button = document.getElementById(buttonId) as HTMLButtonElement;
+
+    button.dataset.title = button.textContent!;
 
     button.addEventListener('click', async () => {
         button.disabled = true;
         button.textContent = 'Clearing...';
 
-        const result = await callback().catch((error) => {
+        const result = await callback().catch((error: Error) => {
             console.error(error);
-            return { message: error.message };
+            return { message: error.message } as Awaited<ReturnType<buttonCallback>>;
         });
 
         if (result.message) button.textContent = result.message;
@@ -42,7 +44,7 @@ function addButtonHandler(button, callback) {
         else button.textContent = 'Failed!';
 
         setTimeout(() => {
-            button.textContent = button.dataset.title;
+            button.textContent = button.dataset.title!;
             button.disabled = false;
         }, 2000);
     });
