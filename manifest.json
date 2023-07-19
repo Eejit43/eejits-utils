@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Eejit's Utils",
+    "version": "1.0",
+    "description": "A collection of utilities!",
+    "icons": {
+        "128": "icon.png"
+    },
+    "permissions": ["browsingData", "cookies", "clipboardWrite", "tabs"],
+    "host_permissions": ["<all_urls>"],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
