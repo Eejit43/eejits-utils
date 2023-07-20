@@ -20,7 +20,7 @@ addButtonHandler("clear-cookies", async () => {
   return { message: `Cleared ${cookies.length} cookies!` };
 });
 function addButtonHandler(buttonId, callback) {
-  const button = document.getElementById(buttonId);
+  const button = document.querySelector(`#${buttonId}`);
   button.dataset.title = button.textContent;
   button.addEventListener("click", async () => {
     button.disabled = true;

@@ -18,5 +18,8 @@
         "stylelint-config-standard": "^34.0.0",
         "stylelint-use-nesting": "^4.1.0",
         "typescript": "^5.1.6"
+    },
+    "dependencies": {
+        "@eejit/eslint-config-typescript": "^1.1.0"
     }
 }

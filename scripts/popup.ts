@@ -22,11 +22,15 @@ addButtonHandler('clear-cookies', async () => {
     return { message: `Cleared ${cookies.length} cookies!` };
 });
 
-type buttonCallback = () => Promise<{ message?: string; success?: boolean }>;
+type ButtonCallback = () => Promise<{ message?: string; success?: boolean }>;
 
-// Functions
-function addButtonHandler(buttonId: string, callback: buttonCallback) {
-    const button = document.getElementById(buttonId) as HTMLButtonElement;
+/**
+ * Adds a click listener to the provided button that runs the given function.
+ * @param buttonId The ID of the button to add the function to.
+ * @param callback The function to run when the button is clicked.
+ */
+function addButtonHandler(buttonId: string, callback: ButtonCallback) {
+    const button = document.querySelector(`#${buttonId}`) as HTMLButtonElement; // eslint-disable-line @typescript-eslint/non-nullable-type-assertion-style
 
     button.dataset.title = button.textContent!;
 
@@ -36,7 +40,7 @@ function addButtonHandler(buttonId: string, callback: buttonCallback) {
 
         const result = await callback().catch((error: Error) => {
             console.error(error);
-            return { message: error.message } as Awaited<ReturnType<buttonCallback>>;
+            return { message: error.message } as Awaited<ReturnType<ButtonCallback>>;
         });
 
         if (result.message) button.textContent = result.message;
