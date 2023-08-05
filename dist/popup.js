@@ -1,6 +1,6 @@
 "use strict";
 addButtonHandler("clear-browsing-data", async () => {
-  await chrome.browsingData.remove({}, { history: true, downloads: true, cache: true, passwords: true, formData: true });
+  await chrome.browsingData.remove({}, { history: true, downloads: true, cache: true, formData: true });
   return { success: true };
 });
 addButtonHandler("clear-clipboard", async () => {
