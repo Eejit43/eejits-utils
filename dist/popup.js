@@ -41,3 +41,4 @@ function addButtonHandler(buttonId, callback) {
     }, 2e3);
   });
 }
+//# sourceMappingURL=popup.js.map

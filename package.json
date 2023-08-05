@@ -1,7 +1,7 @@
 {
     "name": "eejits-utils",
     "scripts": {
-        "build": "npx esbuild $(find scripts -name '*.ts') --outdir=dist --target=esnext --platform=browser"
+        "build": "npx esbuild $(find scripts -name '*.ts') --outdir=dist --target=esnext --platform=browser --sourcemap"
     },
     "devDependencies": {
         "@eejit/eslint-config-typescript": "^2.5.0",
