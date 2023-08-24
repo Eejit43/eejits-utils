@@ -1,12 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@500;600;700&display=swap");
+
+:root {
+    --brand-color-1: #a94646;
+    --brand-color-2: #c08245;
+    --brand-color-3: #d3c05a;
+    --brand-color-4: #46a95f;
+    --brand-color-5: #336c41;
+    --brand-color-6: #4680a9;
+    --brand-color-7: #366281;
+    --brand-color-8: #7d46a9;
+}
 
 * {
     box-sizing: border-box;
-    font-family: Rubik, sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 body {
-    background-color: #2e3440;
+    background-color: #1f2229;
     width: 200px;
 }
 
@@ -14,27 +25,29 @@ h1 {
     text-align: center;
 }
 
+.logo-tools {
+    font-size: 80%;
+}
+
 button {
     display: block;
-    transition: 0.2s;
+    transition: all 0.2s ease;
     cursor: pointer;
-    margin-top: 10px;
-    border: 1px solid #4c566a;
-    border-radius: 2px;
-    background-color: #5e81ac;
-    color: #eceff4;
-
-    &:hover {
-        background-color: #5176a4;
-    }
-
-    &:active {
-        background-color: #3b679c;
-    }
+    margin: 5px 0;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #252525;
+    padding: 0.2rem 0.3rem;
+    width: max-content;
+    height: max-content;
+    color: #a3b3bf;
 
     &:disabled {
-        cursor: default;
-        background-color: #3f6089;
-        color: #abb8cd;
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    &:hover {
+        background-color: #2a2a2a;
     }
 }
