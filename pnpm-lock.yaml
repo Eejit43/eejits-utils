@@ -18,8 +18,8 @@ devDependencies:
     specifier: ^1.0.3
     version: 1.0.3
   '@types/chrome':
-    specifier: ^0.0.252
-    version: 0.0.252
+    specifier: ^0.0.253
+    version: 0.0.253
   esbuild:
     specifier: ^0.19.7
     version: 0.19.7
@@ -429,8 +429,8 @@ packages:
     resolution: {integrity: sha512-+jby/Guq9H8O7NWgCv6X8VAiQE8Dr/nccsCtL74xyHKhu2Knu5EAKmOZj3nLCnLm1KooUzKY+5DsnGVqhM8/wQ==}
     dev: true
 
-  /@types/chrome@0.0.252:
-    resolution: {integrity: sha512-bnVY4Vtz01Dd/KDAn6LgxhGPqBMMxvqjUe3PdbP65/aBvyh3Fuw2qgKooiPFHRVT8uL7SJC0n7EAWcXAjCC+Ug==}
+  /@types/chrome@0.0.253:
+    resolution: {integrity: sha512-ZnBlbeoje0XaBrJbFCXI8DsDfqvqdoWQO5NSGecMCHFC8W8z/rb/n7lI1FHob+TFKKLR4L2c3QJJSFLwtVc9TA==}
     dependencies:
       '@types/filesystem': 0.0.32
       '@types/har-format': 1.2.11
