@@ -12,7 +12,7 @@
         "@types/chrome": "^0.0.266",
         "esbuild": "^0.20.2",
         "stylelint": "^16.3.1",
-        "typescript": "^5.4.4"
+        "typescript": "^5.4.5"
     },
-    "packageManager": "pnpm@8.15.6"
+    "packageManager": "pnpm@8.15.7"
 }
