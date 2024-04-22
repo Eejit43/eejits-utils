@@ -11,8 +11,5 @@ export default [
             parserOptions: { project: ['./tsconfig.json'] },
             globals: { ...globals.browser },
         },
-        rules: {
-            '@typescript-eslint/no-base-to-string': 'off',
-        },
     },
 ];
