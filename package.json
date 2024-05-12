@@ -5,14 +5,14 @@
     },
     "prettier": "@eejit/prettier-config",
     "devDependencies": {
-        "@eejit/eslint-config-typescript": "^9.6.0",
+        "@eejit/eslint-config-typescript": "^10.0.0",
         "@eejit/prettier-config": "^2.2.3",
         "@eejit/stylelint-config": "^3.0.1",
         "@tsconfig/recommended": "^1.0.6",
-        "@types/chrome": "^0.0.267",
-        "esbuild": "^0.20.2",
+        "@types/chrome": "^0.0.268",
+        "esbuild": "^0.21.1",
         "stylelint": "^16.5.0",
         "typescript": "^5.4.5"
     },
-    "packageManager": "pnpm@9.0.6"
+    "packageManager": "pnpm@9.1.0"
 }
