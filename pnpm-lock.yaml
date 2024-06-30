@@ -18,8 +18,8 @@ importers:
         specifier: ^3.0.1
         version: 3.0.1(stylelint@16.6.1(typescript@5.5.2))
       '@tsconfig/recommended':
-        specifier: ^1.0.6
-        version: 1.0.6
+        specifier: ^1.0.7
+        version: 1.0.7
       '@types/chrome':
         specifier: ^0.0.268
         version: 0.0.268
@@ -298,8 +298,8 @@ packages:
     peerDependencies:
       eslint: '>=8.40.0'
 
-  '@tsconfig/recommended@1.0.6':
-    resolution: {integrity: sha512-0IKu9GHYF1NGTJiYgfWwqnOQSlnE9V9R7YohHNNf0/fj/SyOZWzdd06JFr0fLpg1Mqw0kGbYg8w5xdkSqLKM9g==}
+  '@tsconfig/recommended@1.0.7':
+    resolution: {integrity: sha512-xiNMgCuoy4mCL4JTywk9XFs5xpRUcKxtWEcMR6FNMtsgewYTIgIR+nvlP4A4iRCAzRsHMnPhvTRrzp4AGcRTEA==}
 
   '@types/chrome@0.0.268':
     resolution: {integrity: sha512-7N1QH9buudSJ7sI8Pe4mBHJr5oZ48s0hcanI9w3wgijAlv1OZNUZve9JR4x42dn5lJ5Sm87V1JNfnoh10EnQlA==}
@@ -1607,7 +1607,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@tsconfig/recommended@1.0.6': {}
+  '@tsconfig/recommended@1.0.7': {}
 
   '@types/chrome@0.0.268':
     dependencies:
