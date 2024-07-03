@@ -1,8 +1,7 @@
 {
-    "extends": "@tsconfig/recommended/tsconfig.json",
+    "extends": "@eejit/eslint-config-typescript/tsconfig-dom.json",
     "compilerOptions": {
-        "lib": ["DOM", "DOM.Iterable", "ESNext"],
         "types": ["@types/chrome"]
     },
-    "include": ["scripts/*"]
+    "include": ["scripts/*.ts"]
 }
