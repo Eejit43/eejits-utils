@@ -21,8 +21,8 @@ importers:
         specifier: ^1.0.7
         version: 1.0.7
       '@types/chrome':
-        specifier: ^0.0.271
-        version: 0.0.271
+        specifier: ^0.0.272
+        version: 0.0.272
       esbuild:
         specifier: ^0.24.0
         version: 0.24.0
@@ -305,8 +305,8 @@ packages:
   '@tsconfig/recommended@1.0.7':
     resolution: {integrity: sha512-xiNMgCuoy4mCL4JTywk9XFs5xpRUcKxtWEcMR6FNMtsgewYTIgIR+nvlP4A4iRCAzRsHMnPhvTRrzp4AGcRTEA==}
 
-  '@types/chrome@0.0.271':
-    resolution: {integrity: sha512-K0qgXvkwA5ic+/eygF1xiypHEvCoBgH5lwrhg3yva2mqJuCWyYm0vpZQ22GksAxgGfo0PWev9Zx3plp2clMlwg==}
+  '@types/chrome@0.0.272':
+    resolution: {integrity: sha512-9cxDmmgyhXV8gsZvlRjqaDizNjIjbV0spsR0fIEaQUoHtbl9D8VkTOLyONgiBKK+guR38x5eMO3E3avUYOXwcQ==}
 
   '@types/filesystem@0.0.32':
     resolution: {integrity: sha512-Yuf4jR5YYMR2DVgwuCiP11s0xuVRyPKmz8vo6HBY3CGdeMj8af93CFZX+T82+VD1+UqHOxTq31lO7MI7lepBtQ==}
@@ -1595,7 +1595,7 @@ snapshots:
 
   '@tsconfig/recommended@1.0.7': {}
 
-  '@types/chrome@0.0.271':
+  '@types/chrome@0.0.272':
     dependencies:
       '@types/filesystem': 0.0.32
       '@types/har-format': 1.2.11
