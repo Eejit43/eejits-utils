@@ -20,7 +20,15 @@ addButtonHandler('clear-cookies', async () => {
     const cookies = await chrome.cookies.getAll({ url: tab.url });
     if (cookies.length === 0) return { message: 'No cookies found!' };
 
-    await Promise.all(cookies.map((cookie) => chrome.cookies.remove({ url: `http${cookie.secure ? 's' : ''}://${cookie.domain}${cookie.path}`, name: cookie.name, storeId: cookie.storeId })));
+    await Promise.all(
+        cookies.map((cookie) =>
+            chrome.cookies.remove({
+                url: `http${cookie.secure ? 's' : ''}://${cookie.domain}${cookie.path}`,
+                name: cookie.name,
+                storeId: cookie.storeId,
+            }),
+        ),
+    );
 
     return { message: `Cleared ${cookies.length} cookies!` };
 });
