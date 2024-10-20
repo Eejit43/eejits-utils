@@ -1,7 +1,7 @@
 {
     "name": "eejits-utils",
     "scripts": {
-        "build": "npx esbuild $(find scripts -name '*.ts') --outdir=dist --target=esnext --platform=browser --sourcemap"
+        "build": "bunx esbuild $(find scripts -name '*.ts') --outdir=dist --target=esnext --platform=browser --sourcemap"
     },
     "prettier": "@eejit/prettier-config",
     "devDependencies": {
