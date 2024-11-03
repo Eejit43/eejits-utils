@@ -9,7 +9,7 @@
         "@eejit/prettier-config": "^3.2.0",
         "@eejit/stylelint-config": "^4.0.0",
         "@tsconfig/recommended": "^1.0.8",
-        "@types/chrome": "^0.0.279",
+        "@types/chrome": "^0.0.280",
         "esbuild": "^0.24.0",
         "stylelint": "^16.10.0",
         "typescript": "^5.6.3"
