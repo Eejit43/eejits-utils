@@ -8,23 +8,6 @@ addButtonHandler("clear-clipboard", async () => {
   await navigator.clipboard.writeText("");
   return { success: true };
 });
-addButtonHandler("clear-cookies", async () => {
-  const [tab] = await browser.tabs.query({ active: true, currentWindow: true });
-  if (!tab) return { message: "No active tab found!" };
-  if (!tab.url) return { message: "No active tab URL found!" };
-  const cookies = await browser.cookies.getAll({ url: tab.url });
-  if (cookies.length === 0) return { message: "No cookies found!" };
-  await Promise.all(
-    cookies.map(
-      (cookie) => browser.cookies.remove({
-        url: `http${cookie.secure ? "s" : ""}://${cookie.domain}${cookie.path}`,
-        name: cookie.name,
-        storeId: cookie.storeId
-      })
-    )
-  );
-  return { message: `Cleared ${cookies.length} cookies!` };
-});
 function addButtonHandler(buttonId, callback) {
   const button = document.querySelector(`#${buttonId}`);
   button.dataset.title = button.textContent;
