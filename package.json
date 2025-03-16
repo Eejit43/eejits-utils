@@ -1,7 +1,7 @@
 {
     "name": "eejits-utils",
     "scripts": {
-        "build": "bunx esbuild $(find scripts -name '*.ts') --outdir=dist --target=esnext --platform=browser --sourcemap"
+        "build": "bunx esbuild $(find scripts -name '*.ts') --outdir=dist --target=esnext --platform=browser --sourcemap && cp node_modules/webextension-polyfill/dist/browser-polyfill.min.js dist/browser-polyfill.min.js && cp node_modules/webextension-polyfill/dist/browser-polyfill.min.js.map dist/browser-polyfill.min.js.map"
     },
     "prettier": "@eejit/prettier-config",
     "devDependencies": {
@@ -9,9 +9,10 @@
         "@eejit/prettier-config": "^3.4.0",
         "@eejit/stylelint-config": "^5.0.0",
         "@tsconfig/recommended": "^1.0.8",
-        "@types/chrome": "^0.0.309",
+        "@types/firefox-webext-browser": "^120.0.4",
         "esbuild": "^0.25.1",
         "stylelint": "^16.16.0",
-        "typescript": "^5.8.2"
+        "typescript": "^5.8.2",
+        "webextension-polyfill": "^0.12.0"
     }
 }

@@ -1,7 +1,7 @@
 {
     "extends": "@eejit/eslint-config-typescript/tsconfig-dom.json",
     "compilerOptions": {
-        "types": ["@types/chrome"]
+        "types": ["@types/firefox-webext-browser"]
     },
     "include": ["scripts/*.ts"]
 }

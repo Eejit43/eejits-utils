@@ -3,7 +3,8 @@ document.querySelector('button')!.focus();
 
 // Add button handlers
 addButtonHandler('clear-browsing-data', async () => {
-    await chrome.browsingData.remove({}, { history: true, downloads: true, cache: true, formData: true });
+    await browser.browsingData.remove({}, { history: true, downloads: true, cache: true, formData: true });
+
     return { success: true };
 });
 
@@ -13,16 +14,16 @@ addButtonHandler('clear-clipboard', async () => {
 });
 
 addButtonHandler('clear-cookies', async () => {
-    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+    const [tab] = await browser.tabs.query({ active: true, currentWindow: true });
     if (!tab) return { message: 'No active tab found!' };
     if (!tab.url) return { message: 'No active tab URL found!' };
 
-    const cookies = await chrome.cookies.getAll({ url: tab.url });
+    const cookies = await browser.cookies.getAll({ url: tab.url });
     if (cookies.length === 0) return { message: 'No cookies found!' };
 
     await Promise.all(
         cookies.map((cookie) =>
-            chrome.cookies.remove({
+            browser.cookies.remove({
                 url: `http${cookie.secure ? 's' : ''}://${cookie.domain}${cookie.path}`,
                 name: cookie.name,
                 storeId: cookie.storeId,
