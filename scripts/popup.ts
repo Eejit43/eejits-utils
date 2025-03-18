@@ -1,6 +1,3 @@
-// Select first button
-document.querySelector('button')!.focus();
-
 // Add button handlers
 addButtonHandler('clear-browsing-data', async () => {
     await browser.browsingData.remove({}, { history: true, downloads: true, cache: true, formData: true });

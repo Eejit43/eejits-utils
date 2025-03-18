@@ -1,5 +1,4 @@
 "use strict";
-document.querySelector("button").focus();
 addButtonHandler("clear-browsing-data", async () => {
   await browser.browsingData.remove({}, { history: true, downloads: true, cache: true, formData: true });
   return { success: true };
