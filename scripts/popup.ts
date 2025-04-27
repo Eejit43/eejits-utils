@@ -19,7 +19,7 @@ type ButtonCallback = () => Promise<{ message?: string; success?: boolean }>;
  * @param callback The function to run when the button is clicked.
  */
 function addButtonHandler(buttonId: string, callback: ButtonCallback) {
-    const button = document.querySelector(`#${buttonId}`) as HTMLButtonElement;
+    const button = document.querySelector<HTMLButtonElement>(`#${buttonId}`)!;
 
     button.dataset.title = button.textContent!;
 
