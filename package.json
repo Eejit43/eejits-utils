@@ -10,9 +10,9 @@
         "@eejit/stylelint-config": "^5.0.0",
         "@types/firefox-webext-browser": "^120.0.4",
         "esbuild": "^0.25.5",
-        "stylelint": "^16.20.0",
+        "stylelint": "^16.21.0",
         "typescript": "^5.8.3",
-        "web-ext": "^8.7.1",
+        "web-ext": "^8.8.0",
         "webextension-polyfill": "^0.12.0"
     }
 }
