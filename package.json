@@ -13,7 +13,7 @@
         "esbuild": "^0.25.11",
         "stylelint": "^16.25.0",
         "typescript": "^5.9.3",
-        "web-ext": "^9.0.0",
+        "web-ext": "^9.1.0",
         "webextension-polyfill": "^0.12.0"
     }
 }
