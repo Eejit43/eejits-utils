@@ -10,7 +10,7 @@
         "@eejit/prettier-config": "^3.5.0",
         "@eejit/stylelint-config": "^6.0.0",
         "@types/firefox-webext-browser": "^143.0.0",
-        "esbuild": "^0.25.11",
+        "esbuild": "^0.25.12",
         "stylelint": "^16.25.0",
         "typescript": "^5.9.3",
         "web-ext": "^9.1.0",
