@@ -6,14 +6,14 @@
     },
     "prettier": "@eejit/prettier-config",
     "devDependencies": {
-        "@eejit/eslint-config-typescript": "^17.0.0",
+        "@eejit/eslint-config-typescript": "^17.0.1",
         "@eejit/prettier-config": "^3.6.2",
         "@eejit/stylelint-config": "^6.0.0",
         "@types/firefox-webext-browser": "^143.0.0",
-        "esbuild": "^0.27.3",
+        "esbuild": "^0.27.4",
         "stylelint": "^17.4.0",
         "typescript": "^5.9.3",
-        "web-ext": "^9.4.0",
+        "web-ext": "^10.0.0",
         "webextension-polyfill": "^0.12.0"
     }
 }
