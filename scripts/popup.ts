@@ -27,10 +27,14 @@ function addButtonHandler(buttonId: string, callback: ButtonCallback) {
         button.disabled = true;
         button.textContent = 'Clearing...';
 
-        const result = await callback().catch((error: Error) => {
+        let result: Awaited<ReturnType<ButtonCallback>>;
+
+        try {
+            result = await callback();
+        } catch (error: unknown) {
             console.error(error);
-            return { message: error.message } as Awaited<ReturnType<ButtonCallback>>;
-        });
+            result = { message: (error as Error).message };
+        }
 
         if (result.message) button.textContent = result.message;
         else if (result.success) button.textContent = 'Cleared!';

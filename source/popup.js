@@ -13,10 +13,13 @@ function addButtonHandler(buttonId, callback) {
   button.addEventListener("click", async () => {
     button.disabled = true;
     button.textContent = "Clearing...";
-    const result = await callback().catch((error) => {
+    let result;
+    try {
+      result = await callback();
+    } catch (error) {
       console.error(error);
-      return { message: error.message };
-    });
+      result = { message: error.message };
+    }
     if (result.message) button.textContent = result.message;
     else if (result.success) button.textContent = "Cleared!";
     else button.textContent = "Failed!";
